@@ -46,7 +46,7 @@ A comparative study of **deep learning and traditional machine learning** approa
 - Class-weighted cross-entropy loss to handle imbalance
 - Early stopping with best-model checkpointing
 
-### 3. FaceNet Pipeline *(Shadow Recovery)*
+### 3. FaceNet Pipeline *(98.37%)*
 - Uses `keras-facenet` pretrained embeddings
 - Preprocessing with **gamma correction** and **CLAHE** to recover facial features from heavy shadows
 - Fine-tuned top 20 layers of the FaceNet base model
