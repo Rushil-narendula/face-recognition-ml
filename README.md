@@ -8,6 +8,7 @@ A comparative study of **deep learning and traditional machine learning** approa
 
 | Model | Test Accuracy |
 |---|---|
+| FaceNet (Fine-tuned)         | **98.37%**    |
 | ResNet50 (Transfer Learning) | **98.13%** |
 | CNN from Scratch | 96.13% |
 | SVM (RBF Kernel) + PCA | 91.06% |
@@ -33,8 +34,7 @@ A comparative study of **deep learning and traditional machine learning** approa
 ---
 
 ## 🔍 Approaches
-
-### 1. ResNet50 — Transfer Learning *(Best: 98.13%)*
+### 1. ResNet50 — Transfer Learning *(98.13%)*
 - Pretrained on ImageNet, fine-tuned for 28-class face recognition
 - Modified `conv1` layer to accept grayscale input
 - Label smoothing + cosine annealing LR scheduler
@@ -46,7 +46,7 @@ A comparative study of **deep learning and traditional machine learning** approa
 - Class-weighted cross-entropy loss to handle imbalance
 - Early stopping with best-model checkpointing
 
-### 3. FaceNet Pipeline *(98.37%)*
+### 3. FaceNet Pipeline *(Best: 98.37%)*
 - Uses `keras-facenet` pretrained embeddings
 - Preprocessing with **gamma correction** and **CLAHE** to recover facial features from heavy shadows
 - Fine-tuned top 20 layers of the FaceNet base model
